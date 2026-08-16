@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Helping Orphanages | Sampark</title>
+
+    <link rel="stylesheet" href="../CSS AND JS/Helping Orphanage.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <nav>
+            <a href="Home.html" class="home-btn">
+                🏠 Home
+            </a>
+            <a href="Education.html" class="logo-link">
+                🎓 Education
+            </a>
+            <a href="Healthcare.html" class="logo-link">
+                ❤️‍🩹 Healthcare
+            </a>
+            <a href="Helping-Orphanages.html" class="logo-link">
+                👧🏻 Helping Orphanages
+            </a>
+            <a href="Financial-Literacy.html" class="logo-link">
+                🏦 Financial Literacy
+            </a>
+            <a href="Environment.html" class="home-btn">
+                🌍 Environment
+            </a>
+            <a href="Home.html" class="home-btn">
+                📞 Contact Us
+            </a>
+        </nav>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Every Child Deserves Love, Care and Hope
+            </h1>
+
+            <p>
+                Together we can provide shelter, education,
+                support and opportunities for children.
+            </p>
+
+            <button onclick="openSupportPopup()">
+                Support A Child ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="about">
+
+        <h2>🏠 About Our Initiative</h2>
+
+        <p>
+
+            Sampark works closely with orphanages and child-care
+            organizations to ensure children receive quality education,
+            nutritious meals, emotional support and opportunities
+            for a brighter future.
+
+        </p>
+
+    </section>
+
+    <section class="services">
+
+        <div class="card">
+
+            <h3>🏠 Safe Shelter</h3>
+
+            <p>
+                Providing safe and secure living environments.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>📚 Education</h3>
+
+            <p>
+                Access to schools, books and learning resources.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🍲 Healthy Meals</h3>
+
+            <p>
+                Nutritious meals for healthy growth.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>❤️ Emotional Support</h3>
+
+            <p>
+                Care, guidance and emotional wellbeing.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="gallery">
+    
+        <h2>📸 Our Journey</h2>
+    
+        <div class="gallery-container">
+    
+            <img src="orphan1.jpg">
+    
+            <img src="orphan2.jpg">
+    
+            <img src="orphan3.jpg">
+    
+            <img src="orphan4.jpg">
+    
+        </div>
+    
+    </section>
+
+    <section class="stories">
+    
+        <h2>🌟 Success Stories</h2>
+    
+        <div class="story-container">
+    
+            <div class="story-card">
+    
+                <h3>Sanjukta</h3>
+    
+                <p>
+                    With educational support from Sampark,
+                     is now one of the top students in her class
+                    and dreams of becoming Sanjukata a teacher.
+                </p>
+    
+            </div>
+    
+            <div class="story-card">
+    
+                <h3>Mohapatra</h3>
+    
+                <p>
+                    Mohapatra received mentorship and study resources.
+                    His dream is to become a doctor and help others.
+                </p>
+    
+            </div>
+    
+            <div class="story-card">
+    
+                <h3>Sujata</h3>
+    
+                <p>
+                    Sujata discovered her passion for science and
+                    now dreams of becoming an engineer.
+                </p>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <section class="help-section">
+    
+        <h2>❤️ How You Can Help</h2>
+    
+        <div class="help-buttons">
+    
+            <button onclick="openSupportPopup()">
+                ❤️ Support A Child
+            </button>
+    
+            <button onclick="openVolunteerPopup()">
+                🤝 Volunteer
+            </button>
+    
+        </div>
+    
+    </section>
+
+    <section class="impact">
+    
+        <div class="impact-box">
+    
+            <h1>600+</h1>
+    
+            <p>Children Supported</p>
+    
+        </div>
+    
+        <div class="impact-box">
+    
+            <h1>75+</h1>
+    
+            <p>Volunteers</p>
+    
+        </div>
+    
+        <div class="impact-box">
+    
+            <h1>1500+</h1>
+    
+            <p>Books Distributed</p>
+    
+        </div>
+    
+        <div class="impact-box">
+    
+            <h1>100+</h1>
+    
+            <p>Events Conducted</p>
+    
+        </div>
+    
+    </section>
+
+    <div class="popup" id="volunteerPopup">
+    
+        <div class="popup-content">
+    
+            <span class="close" onclick="closeVolunteerPopup()">×</span>
+    
+            <h2>🤝 Become A Volunteer</h2>
+    
+            <input type="text" placeholder="Full Name">
+    
+            <input type="tel" placeholder="Phone Number">
+    
+            <input type="email" placeholder="Email Address">
+
+            <textarea placeholder="Why do you want to volunteer?"></textarea>
+
+            <button>Join Us</button>
+    
+        </div>
+    
+    </div>
+
+    <div class="popup" id="supportPopup">
+    
+        <div class="popup-content">
+    
+            <span class="close" onclick="closeSupportPopup()">×</span>
+    
+            <h2>❤️ Support A Child</h2>
+    
+            <input type="text" placeholder="Full Name">
+    
+            <input type="tel" placeholder="Phone Number">
+    
+            <input type="email" placeholder="Email Address">
+    
+            <textarea placeholder="How would you like to help?"></textarea>
+    
+            <button>Submit</button>
+    
+        </div>
+    
+    </div>
+
+<script src="../CSS AND JS/Helping Orphanages.js"></script>
+
+</body>
+
+</html>

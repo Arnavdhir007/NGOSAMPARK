@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sampark</title>
+
+    <link rel="stylesheet" href="../CSS AND JS/sampark.css">
+
+</head>
+
+<body id="top">
+
+    <!-- ===========================
+            NAVBAR
+    ============================ -->
+    <nav>
+
+        <div class="nav-left">
+
+            <a href="#top">
+
+                <img src="../IMAGES/Sampark Logo1.png" alt="Sampark Logo" class="logo">
+
+            </a>
+
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+
+            ☰
+
+        </button>
+
+        <div class="nav-links">
+
+            <span class="close-menu" onclick="toggleMenu()">
+
+                ✖️
+
+            </span>
+
+            <a href="Education.html">
+                🎓 Education
+            </a>
+
+            <a href="Health care.html">
+                ❤️ Healthcare
+            </a>
+
+            <a href="Helping Orphanages.html">
+                👧 Helping Orphanages
+            </a>
+
+            <a href="Environment.html">
+                🌳 Environment
+            </a>
+
+            <a href="Financial Literacy.html">
+                🏦 Financial Literacy
+            </a>
+
+            <a href="Animal Welfare.html">
+                🐮 Animal Welfare
+            </a>
+
+            <a href="Be In Touch With Us.html">
+                📞 Contact Us
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ===========================
+            HEADER
+    ============================ -->
+
+    <header>
+
+        <h1>
+
+            Helping Hands With Sampark
+
+        </h1>
+
+        <p>
+
+            🌈 Many Causes. One Mission. Endless Kindness.
+
+        </p>
+
+    </header>
+
+
+
+    <!-- ===========================
+            HERO
+    ============================ -->
+
+    <section class="hero">
+
+        <div class="hero-overlay">
+
+            <h1>
+
+                Together,
+                We Can Change Lives
+
+            </h1>
+
+            <p>
+
+                Join Sampark in creating brighter futures through
+                education, healthcare, environmental conservation,
+                financial literacy, animal welfare and support for
+                orphanages.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="btn" onclick="openPopup()">
+
+                    💛 Donate Now
+
+                </button>
+
+                <button class="btn volunteer-btn"
+                    onclick="document.getElementById('volunteer').scrollIntoView({behavior:'smooth'})">
+
+                    🤝 Become a Volunteer
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+        DAILY KINDNESS QUOTE
+    ============================ -->
+
+    <section id="quotes">
+
+        <div class="section-1">
+
+            <h2>
+
+                🌟 Daily Kindness Quote
+
+            </h2>
+
+            <p id="quote">
+
+                Click the button below to receive today's
+                dose of kindness and inspiration!
+
+            </p>
+
+            <button id="quoteBtn" class="btn">
+
+                💛 Inspire Me
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+                    OUR MISSION
+            ============================ -->
+
+    <section id="about">
+
+        <div class="section">
+
+            <h2>💛 Our Mission</h2>
+
+            <p class="mission-intro">
+
+                At Sampark, we believe that even the smallest act of kindness
+                can create a lifetime of change.
+
+            </p>
+
+            <div class="mission-cards">
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+                        ❤️
+                    </div>
+
+                    <h3>Serve</h3>
+
+                    <p>
+
+                        Supporting communities with love,
+                        compassion and care.
+
+                    </p>
+
+                </div>
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+                        🌍
+                    </div>
+
+                    <h3>Empower</h3>
+
+                    <p>
+
+                        Helping people build brighter futures
+                        through opportunity and education.
+
+                    </p>
+
+                </div>
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+                        🌱
+                    </div>
+
+                    <h3>Inspire</h3>
+
+                    <p>
+
+                        Encouraging everyone to spread kindness
+                        and make a positive impact.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+                    GALLERY
+            ============================ -->
+    <section id="gallery">
+
+        <div class="section">
+
+            <h2>📸 Moments That Inspire Us</h2>
+
+            <p class="gallery-text">
+
+                Every smile tells a story.
+                Every helping hand changes a life.
+
+            </p>
+
+            <div class="gallery-container">
+
+                <div class="gallery-track">
+
+                    <img src="../IMAGES/sampark_children_education.png">
+
+                    <img src="../IMAGES/sampark_community_meeting.png">
+
+                    <img src="../IMAGES/sampark_group_photo_clean.png">
+
+                    <img src="../IMAGES/sampark_tree_plantation.png">
+
+                    <img src="../IMAGES/Sampark Logo1.png">
+
+                    <!-- Duplicate Images -->
+
+                    <img src="../IMAGES/sampark_children_education.png">
+
+                    <img src="../IMAGES/sampark_community_meeting.png">
+
+                    <img src="../IMAGES/sampark_group_photo_clean.png">
+
+                    <img src="../IMAGES/sampark_tree_plantation.png">
+
+                    <img src="../IMAGES/Sampark Logo1.png">
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+                    NEED HELP
+            ============================ -->
+
+    <section id="help">
+
+        <div class="section help-section">
+
+            <div class="help-left">
+
+                <h2>
+
+                    🆘 Need Help?
+
+                </h2>
+
+                <p>
+
+                    Whether you need educational support,
+                    medical assistance or someone to guide you,
+                    Sampark is here for you.
+
+                </p>
+
+                <button class="btn" onclick="openHelpPopup()">
+
+                    Request Help ❤️
+
+                </button>
+
+            </div>
+
+            <div class="help-right">
+
+                <img src="../IMAGES/MACSOT.png" alt="Sampark Mascot">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+                    OUR CAUSES
+            ============================ -->
+
+    <section id="causes">
+
+        <h2>
+
+            🌈 Our Causes
+
+        </h2>
+
+        <p>
+
+            Explore the different ways Sampark is
+            making a difference.
+
+        </p>
+
+        <div class="cause-container">
+            <!-- HEALTHCARE -->
+
+            <div class="cause-card healthcare">
+
+                <div class="cause-icon">
+                    ❤️
+                </div>
+
+                <h3>Healthcare</h3>
+
+                <p>
+
+                    Better healthcare
+                    for happier communities.
+
+                </p>
+
+                <a href="Health Care.html" class="cause-btn">
+
+                    →
+
+                </a>
+
+            </div>
+
+            <!-- EDUCATION -->
+
+            <div class="cause-card education">
+
+                <div class="cause-icon">
+                    🎓
+                </div>
+
+                <h3>Education</h3>
+
+                <p>
+
+                    Opening doors through learning
+                    and opportunity.
+
+                </p>
+
+                <a href="Education.html" class="cause-btn">
+
+                    →
+
+                </a>
+
+            </div>
+
+            <!-- HELPING ORPHANAGES -->
+
+            <div class="cause-card orphanages">
+
+                <div class="cause-icon">
+                    👧
+                </div>
+
+                <h3>Helping Orphanages</h3>
+
+                <p>
+
+                    Bringing hope,
+                    care and brighter futures.
+
+                </p>
+
+                <a href="Helping Orphanages.html" class="cause-btn">
+
+                    →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- ENVIRONMENT -->
+
+            <div class="cause-card environment">
+
+                <div class="cause-icon">
+                    🌳
+                </div>
+
+                <h3>Environment</h3>
+
+                <p>
+
+                    Protecting nature
+                    for generations to come.
+
+                </p>
+
+                <a href="Environment.html" class="cause-btn">
+
+                    →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- FINANCIAL LITERACY -->
+
+            <div class="cause-card finance">
+
+                <div class="cause-icon">
+                    🏦
+                </div>
+
+                <h3>Financial Literacy</h3>
+
+                <p>
+
+                    Teaching smart money
+                    habits for life.
+
+                </p>
+
+                <a href="Financial Literacy.html" class="cause-btn">
+
+                    →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- ANIMAL WELFARE -->
+
+            <div class="cause-card animals">
+
+                <div class="cause-icon">
+                    🐮
+                </div>
+
+                <h3>Animal Welfare</h3>
+
+                <p>
+
+                    Caring for animals
+                    with compassion and kindness.
+
+                </p>
+
+                <a href="Animal Welfare.html" class="cause-btn">
+
+                    →
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="cause-card contact">
+
+            <h2>📞 Contact Us</h2>
+
+            <p>Contact to change a person's life.</p>
+
+            <a href="Contact Us.html" class="cause-btn">→</a>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+                        OUR IMPACT
+                ============================ -->
+
+    <section id="impact">
+
+        <h2>📊 Our Impact</h2>
+
+        <p>
+            Every small act of kindness creates a ripple of change.
+        </p>
+
+        <div class="impact-container">
+
+            <div class="impact-card">
+                <h1>500+</h1>
+                <p>Children Educated 📚</p>
+            </div>
+
+            <div class="impact-card">
+                <h1>250+</h1>
+                <p>Families Supported ❤️</p>
+            </div>
+
+            <div class="impact-card">
+                <h1>1000+</h1>
+                <p>Trees Planted 🌳</p>
+            </div>
+
+            <div class="impact-card">
+                <h1>300+</h1>
+                <p>Animals Helped 🐮</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+                        VOLUNTEER
+                ============================ -->
+
+    <section id="volunteer">
+
+        <div class="section">
+
+            <h2>🤝 Become a Volunteer</h2>
+
+            <p>
+
+                Join our wonderful team of volunteers and
+                help make a difference in someone's life.
+
+            </p>
+
+            <button class="btn" onclick="openVolunteerPopup()">
+
+                Join Us ❤️
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+                        DONATE
+                ============================ -->
+
+    <section id="donate-section">
+
+        <div class="section">
+
+            <h2>💛 Support Our Mission</h2>
+
+            <p>
+
+                Every contribution helps us bring hope,
+                education and care to those who need it most.
+
+            </p>
+
+            <button class="btn" onclick="openPopup()">
+
+                Donate Now 💛
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+                        CONTACT
+                ============================ -->
+
+    <section id="contact">
+
+        <div class="section">
+
+            <h2>📞 Contact Us</h2>
+
+            <p>
+
+                We'd love to hear from you!
+
+            </p>
+
+            <p>
+                📧 info@sampark.org
+            </p>
+
+            <p>
+                📱 +91 84840 11309
+            </p>
+
+            <button class="btn" onclick="window.location.href='Contact.html'">
+
+                Contact Page →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+                        FOOTER
+                ============================ -->
+
+    <footer>
+
+        <h2>
+
+            Helping Hands With Sampark
+
+        </h2>
+
+        <p>
+
+            🌈 Many Causes. One Mission. Endless Kindness.
+
+        </p>
+
+        <p>
+
+            © 2026 Sampark NGO.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- ===========================
+                        FLOATING MASCOT
+                ============================ -->
+
+    <img src="../IMAGES/MACSOT.png" id="mascot" alt="Sampark Mascot">
+
+
+
+    <!-- ===========================
+                        DONATE POPUP
+                ============================ -->
+
+    <div id="donatePopup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closePopup()">
+
+                &times;
+
+            </span>
+
+            <h2>
+
+                💛 Support Sampark
+
+            </h2>
+
+            <p>
+
+                Every donation helps us create
+                brighter futures.
+
+            </p>
+
+            <button class="donate-btn" onclick="paymentDone()">
+
+                I Have Donated ❤️
+
+            </button>
+
+            <p id="thankYouMsg"></p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===========================
+                        VOLUNTEER POPUP
+                ============================ -->
+
+    <div id="volunteerPopup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeVolunteerPopup()">
+
+                &times;
+
+            </span>
+
+            <h2>
+
+                🤝 Become a Volunteer
+
+            </h2>
+
+            <input type="text" id="volunteerName" placeholder="Your Name">
+
+            <input type="tel" id="volunteerPhone" placeholder="Phone Number">
+
+            <button class="donate-btn" onclick="submitVolunteer()">
+
+                Join Sampark ❤️
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===========================
+                        HELP POPUP
+                ============================ -->
+
+    <div id="helpPopup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeHelpPopup()">
+
+                &times;
+
+            </span>
+
+            <h2>
+
+                🆘 Request Help
+
+            </h2>
+
+            <input type="text" id="helpName" placeholder="Your Name">
+
+            <input type="tel" id="helpPhone" placeholder="Phone Number">
+
+            <input type="text" id="helpLocation" placeholder="Location">
+
+            <select id="helpType">
+
+                <option value="">
+                    Select Help Type
+                </option>
+
+                <option>
+                    Education
+                </option>
+
+                <option>
+                    Healthcare
+                </option>
+
+                <option>
+                    Financial Support
+                </option>
+
+                <option>
+                    Food Assistance
+                </option>
+
+                <option>
+                    Emergency Help
+                </option>
+
+                <option>
+                    Other
+                </option>
+
+            </select>
+
+            <textarea id="helpDescription" rows="4" placeholder="Describe your situation..."></textarea>
+
+            <button class="donate-btn" onclick="submitHelp()">
+
+                Submit Request ❤️
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===========================
+                        SCROLL TO TOP
+                ============================ -->
+
+    <button id="topBtn">
+
+        🐣
+
+    </button>
+
+
+
+    <!-- ===========================
+                        JAVASCRIPT
+                ============================ -->
+    <script src="../CSS AND JS/sampark.js"></script>
+
+</body>
+
+</html>

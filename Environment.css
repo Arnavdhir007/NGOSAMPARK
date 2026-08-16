@@ -1,0 +1,2031 @@
+/* =========================================================
+                    GOOGLE FONT
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =========================================================
+                    RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4fbf5;
+    color: #263d2b;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+                    NAVBAR
+========================================================= */
+
+nav {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 85px;
+
+    background: #2d6a4f;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, .18);
+
+    backdrop-filter: blur(10px);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+
+    transition: .3s;
+}
+
+.logo:hover {
+    transform: scale(1.08);
+}
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #b7f7c5;
+
+    transform: translateY(-2px);
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.close-menu {
+    display: none;
+}
+
+
+/* =========================================================
+                    HEADER
+========================================================= */
+
+header {
+    margin-top: 85px;
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(90deg,
+            #1b4332,
+            #2d6a4f,
+            #40916c);
+}
+
+header h1 {
+    font-size: 48px;
+
+    font-weight: 800;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, .25);
+}
+
+header p {
+    font-size: 20px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+                    HERO
+========================================================= */
+
+.hero {
+    height: 680px;
+
+    background:
+        linear-gradient(rgba(0, 40, 20, .52),
+            rgba(0, 40, 20, .52)),
+        url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e") center/cover;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(circle at center,
+            rgba(76, 175, 80, .15),
+            transparent 65%);
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1000px;
+
+    padding: 30px;
+
+    animation:
+        heroAppear 1.2s ease;
+}
+
+@keyframes heroAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(45px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+.hero h1 {
+    font-size: 72px;
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    text-shadow:
+        0 4px 20px rgba(0, 0, 0, .7),
+        0 0 25px rgba(126, 255, 126, .3);
+}
+
+.hero p {
+    max-width: 850px;
+
+    margin: 25px auto 0;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+                    BUTTONS
+========================================================= */
+
+.btn {
+    border: none;
+
+    padding: 16px 32px;
+
+    border-radius: 40px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    background: #95d5b2;
+
+    color: #1b4332;
+
+    transition: .35s;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .18);
+}
+
+.btn:hover {
+    transform:
+        translateY(-6px) scale(1.04);
+
+    background: #b7efc5;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, .25),
+        0 0 25px rgba(149, 213, 178, .5);
+}
+
+.green-btn {
+    background: white;
+
+    color: #2d6a4f;
+}
+
+
+/* =========================================================
+                    GENERAL SECTIONS
+========================================================= */
+
+section {
+    position: relative;
+}
+
+.section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 48px;
+
+    margin-bottom: 25px;
+
+    color: #1b4332;
+}
+
+.section-subtitle {
+    font-size: 20px;
+
+    color: #607d68;
+
+    margin-bottom: 50px;
+}
+
+.large-text {
+    max-width: 950px;
+
+    margin: 0 auto 25px;
+
+    font-size: 21px;
+
+    line-height: 1.9;
+
+    color: #53665a;
+}
+
+
+/* =========================================================
+                    INTRODUCTION
+========================================================= */
+
+#environment-intro {
+    padding: 110px 25px;
+
+    background:
+        linear-gradient(135deg,
+            #effaf1,
+            #ffffff);
+
+    text-align: center;
+}
+
+#environment-intro h2 {
+    font-size: 52px;
+
+    color: #2d6a4f;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+                    MISSION
+========================================================= */
+
+#mission {
+    padding: 110px 25px;
+
+    background: white;
+}
+
+.mission-intro {
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 21px;
+
+    line-height: 1.8;
+
+    color: #607d68;
+}
+
+.mission-cards {
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+.mission-card {
+    background: white;
+
+    padding: 45px 35px;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 15px 40px rgba(27, 67, 50, .09);
+
+    border-top: 5px solid #40916c;
+
+    transition: .4s;
+}
+
+.mission-card:hover {
+    transform:
+        translateY(-12px);
+
+    box-shadow:
+        0 20px 45px rgba(45, 106, 79, .22);
+}
+
+.mission-icon {
+    font-size: 65px;
+
+    margin-bottom: 20px;
+}
+
+.mission-card h3 {
+    font-size: 26px;
+
+    margin-bottom: 15px;
+
+    color: #2d6a4f;
+}
+
+.mission-card p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #607d68;
+}
+
+
+/* =========================================================
+                    ENVIRONMENT SERVICES
+========================================================= */
+
+#services {
+    padding: 110px 25px;
+
+    background:
+        #edf8ef;
+}
+
+.service-grid {
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+.service-card {
+    position: relative;
+
+    overflow: hidden;
+
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 12px 35px rgba(27, 67, 50, .08);
+
+    transition: .35s;
+}
+
+.service-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background:
+        linear-gradient(90deg,
+            #1b4332,
+            #40916c,
+            #95d5b2);
+}
+
+.service-card:hover {
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 18px 40px rgba(45, 106, 79, .18);
+}
+
+.service-icon {
+    font-size: 60px;
+
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+    color: #2d6a4f;
+}
+
+.service-card p {
+    line-height: 1.7;
+
+    color: #607d68;
+}
+
+
+/* =========================================================
+                    ENVIRONMENT AWARENESS
+========================================================= */
+
+#awareness {
+    padding: 110px 25px;
+
+    background: white;
+}
+
+.awareness-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 25px;
+}
+
+.awareness-card {
+    background:
+        linear-gradient(135deg,
+            #f0faf2,
+            #ffffff);
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    border:
+        1px solid #d8eedc;
+
+    transition: .35s;
+}
+
+.awareness-card:hover {
+    transform:
+        translateY(-8px);
+
+    border-color: #52b788;
+
+    box-shadow:
+        0 12px 30px rgba(82, 183, 136, .18);
+}
+
+.awareness-card span {
+    display: block;
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+.awareness-card h3 {
+    font-size: 23px;
+
+    color: #40916c;
+
+    margin-bottom: 12px;
+}
+
+.awareness-card p {
+    line-height: 1.6;
+
+    color: #607d68;
+}
+
+
+/* =========================================================
+                    GREEN MISSION / ACTION
+========================================================= */
+
+#green-action {
+    padding: 90px 25px;
+
+    background:
+        linear-gradient(135deg,
+            #1b4332,
+            #2d6a4f,
+            #40916c);
+
+    color: white;
+}
+
+.green-action-box {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 55px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(255, 255, 255, .09);
+
+    border:
+        1px solid rgba(255, 255, 255, .18);
+
+    backdrop-filter: blur(10px);
+}
+
+.green-action-content {
+    flex: 1;
+}
+
+.green-action-content h2 {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.green-action-content p {
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.green-action-icon {
+    font-size: 130px;
+
+    animation:
+        leafFloat 3s ease-in-out infinite;
+}
+
+@keyframes leafFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0) rotate(-4deg);
+    }
+
+    50% {
+        transform:
+            translateY(-15px) rotate(5deg);
+    }
+
+}
+
+
+/* =========================================================
+                    HOW WE HELP
+========================================================= */
+
+#how-we-help {
+    padding: 110px 25px;
+
+    background: #f8fcf8;
+}
+
+.steps {
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 30px;
+}
+
+.step {
+    background: white;
+
+    padding: 40px 25px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(27, 67, 50, .08);
+
+    transition: .3s;
+}
+
+.step:hover {
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 15px 35px rgba(45, 106, 79, .15);
+}
+
+.step-number {
+    width: 65px;
+
+    height: 65px;
+
+    margin:
+        0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #2d6a4f;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+.step h3 {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    color: #2d6a4f;
+}
+
+.step p {
+    color: #607d68;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+                    BIODIVERSITY
+========================================================= */
+
+#biodiversity {
+    padding: 110px 25px;
+
+    background: white;
+}
+
+.biodiversity-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+.biodiversity-card {
+    min-height: 260px;
+
+    padding: 40px 30px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(145deg,
+            #edf8ef,
+            #ffffff);
+
+    box-shadow:
+        0 12px 30px rgba(27, 67, 50, .08);
+
+    transition: .4s;
+}
+
+.biodiversity-card:hover {
+    transform:
+        translateY(-10px) scale(1.02);
+
+    box-shadow:
+        0 18px 40px rgba(45, 106, 79, .18);
+}
+
+.biodiversity-icon {
+    font-size: 65px;
+
+    margin-bottom: 20px;
+}
+
+.biodiversity-card h3 {
+    font-size: 25px;
+
+    color: #2d6a4f;
+
+    margin-bottom: 15px;
+}
+
+.biodiversity-card p {
+    color: #607d68;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+                    ENVIRONMENTAL EDUCATION
+========================================================= */
+
+#education {
+    padding: 110px 25px;
+
+    background:
+        linear-gradient(135deg,
+            #e9f7ec,
+            #f8fff9);
+}
+
+.education-container {
+    max-width: 1050px;
+
+    margin: 55px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 25px;
+}
+
+.education-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(27, 67, 50, .08);
+
+    transition: .3s;
+}
+
+.education-card:hover {
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(82, 183, 136, .2);
+}
+
+.education-card h3 {
+    color: #40916c;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.education-card p {
+    line-height: 1.7;
+
+    color: #607d68;
+}
+
+
+/* =========================================================
+                    GREEN GALLERY
+========================================================= */
+
+#gallery {
+    padding: 110px 20px;
+
+    background: #f0faf2;
+
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 50px;
+
+    color: #1b4332;
+
+    margin-bottom: 15px;
+}
+
+.gallery-text {
+    font-size: 20px;
+
+    color: #607d68;
+
+    margin-bottom: 45px;
+}
+
+.gallery-container {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.gallery-track {
+    display: flex;
+
+    width: max-content;
+
+    gap: 22px;
+
+    animation:
+        greenGallery 32s linear infinite;
+}
+
+.gallery-track:hover {
+    animation-play-state: paused;
+}
+
+.gallery-track img {
+    width: 320px;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 20px rgba(27, 67, 50, .15);
+
+    transition: .3s;
+}
+
+.gallery-track img:hover {
+    transform:
+        scale(1.05);
+
+    box-shadow:
+        0 15px 30px rgba(45, 106, 79, .25);
+}
+
+@keyframes greenGallery {
+
+    from {
+        transform:
+            translateX(0);
+    }
+
+    to {
+        transform:
+            translateX(-50%);
+    }
+
+}
+
+
+/* =========================================================
+                    IMPACT
+========================================================= */
+
+#impact {
+    padding: 110px 25px;
+
+    background:
+        linear-gradient(135deg,
+            #95d5b2,
+            #74c69d,
+            #52b788);
+
+    text-align: center;
+}
+
+#impact h2 {
+    font-size: 50px;
+
+    color: #1b4332;
+}
+
+#impact>.section>p {
+    margin-top: 15px;
+
+    font-size: 20px;
+
+    color: #24523c;
+}
+
+.impact-container {
+    max-width: 1200px;
+
+    margin:
+        60px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 30px;
+}
+
+.impact-card {
+    background: white;
+
+    padding: 40px 25px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 12px 30px rgba(27, 67, 50, .15);
+
+    transition: .35s;
+}
+
+.impact-card:hover {
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 18px 35px rgba(27, 67, 50, .22);
+}
+
+.impact-card h1 {
+    font-size: 58px;
+
+    color: #2d6a4f;
+
+    margin-bottom: 10px;
+}
+
+.impact-card p {
+    font-size: 18px;
+
+    color: #53665a;
+}
+
+
+/* =========================================================
+                    TREE STORY
+========================================================= */
+
+#tree-story {
+    padding: 120px 25px;
+
+    background: white;
+
+    text-align: center;
+}
+
+.tree-story-box {
+    max-width: 950px;
+
+    margin:
+        50px auto 0;
+
+    padding: 60px;
+
+    background:
+        linear-gradient(135deg,
+            #effaf1,
+            #ffffff);
+
+    border-radius: 30px;
+
+    border-left:
+        6px solid #40916c;
+
+    box-shadow:
+        0 15px 40px rgba(27, 67, 50, .09);
+}
+
+.tree-icon {
+    font-size: 75px;
+
+    margin-bottom: 25px;
+
+    animation:
+        treeFloat 3s ease-in-out infinite;
+}
+
+@keyframes treeFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-10px);
+    }
+
+}
+
+.tree-story-box p {
+    font-size: 21px;
+
+    line-height: 2;
+
+    color: #53665a;
+}
+
+
+/* =========================================================
+                SMALL ACTIONS BIG DIFFERENCE
+========================================================= */
+
+#small-actions {
+    padding: 110px 25px;
+
+    background: #edf8ef;
+}
+
+.action-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.action-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 25px rgba(27, 67, 50, .08);
+
+    transition: .3s;
+}
+
+.action-card:hover {
+    transform:
+        translateY(-8px);
+
+    background: #f7fff8;
+}
+
+.action-card span {
+    display: block;
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+.action-card h3 {
+    color: #2d6a4f;
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+.action-card p {
+    color: #607d68;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+                    VOLUNTEER
+========================================================= */
+
+#eco-volunteer {
+    padding: 110px 25px;
+
+    text-align: center;
+
+    background: white;
+}
+
+#eco-volunteer h2 {
+    font-size: 50px;
+
+    color: #2d6a4f;
+
+    margin-bottom: 20px;
+}
+
+#eco-volunteer p {
+    max-width: 850px;
+
+    margin:
+        0 auto 35px;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    color: #607d68;
+}
+
+
+/* =========================================================
+                    SUPPORT
+========================================================= */
+
+#support {
+    padding: 100px 25px;
+
+    background:
+        linear-gradient(90deg,
+            #1b4332,
+            #2d6a4f,
+            #40916c);
+
+    color: white;
+
+    text-align: center;
+}
+
+.support-box {
+    max-width: 950px;
+
+    margin: auto;
+}
+
+.support-box h2 {
+    font-size: 52px;
+
+    margin-bottom: 20px;
+}
+
+.support-box p {
+    font-size: 21px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+.support-box .btn {
+    background: #d8f3dc;
+
+    color: #1b4332;
+}
+
+
+/* =========================================================
+                    FAQ
+========================================================= */
+
+#faq {
+    padding: 110px 25px;
+
+    background: #f8fcf8;
+}
+
+.faq-container {
+    max-width: 900px;
+
+    margin:
+        50px auto 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 20px rgba(27, 67, 50, .07);
+}
+
+.faq-item>button {
+    width: 100%;
+
+    border: none;
+
+    background: white;
+
+    padding: 22px 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    text-align: left;
+
+    font-family: inherit;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    color: #263d2b;
+}
+
+.faq-item>button span {
+    font-size: 28px;
+
+    color: #40916c;
+
+    transition: .3s;
+}
+
+.faq-item.active>button span {
+    transform:
+        rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height .4s ease;
+}
+
+.faq-answer p {
+    padding:
+        0 25px 25px;
+
+    color: #607d68;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+                    WHY PLANET
+========================================================= */
+
+#why-planet {
+    padding: 110px 25px;
+
+    background: white;
+}
+
+.why-grid {
+    margin-top: 55px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+.why-card {
+    background:
+        linear-gradient(135deg,
+            #effaf1,
+            white);
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(27, 67, 50, .07);
+
+    transition: .35s;
+}
+
+.why-card:hover {
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 15px 35px rgba(45, 106, 79, .16);
+}
+
+.why-card h3 {
+    font-size: 25px;
+
+    color: #2d6a4f;
+
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    line-height: 1.7;
+
+    color: #607d68;
+}
+
+
+/* =========================================================
+                    FINAL CTA
+========================================================= */
+
+#final-cta {
+    min-height: 520px;
+
+    background:
+        linear-gradient(rgba(0, 35, 15, .65),
+            rgba(0, 35, 15, .65)),
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e") center/cover;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.final-overlay {
+    max-width: 950px;
+
+    padding: 30px;
+}
+
+.final-overlay h2 {
+    font-size: 58px;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 3px 15px rgba(0, 0, 0, .5);
+}
+
+.final-overlay p {
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+.final-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+                    FOOTER
+========================================================= */
+
+footer {
+    background: #102a1b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 75px 20px;
+}
+
+footer h2 {
+    color: #95d5b2;
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 10px 0;
+
+    color: #d8f3dc;
+}
+
+
+/* =========================================================
+                    FLOATING MASCOT
+========================================================= */
+
+#mascot {
+    position: fixed;
+
+    right: 22px;
+
+    bottom: 25px;
+
+    width: 95px;
+
+    cursor: pointer;
+
+    z-index: 999;
+
+    transition: .3s;
+
+    filter:
+        drop-shadow(0 8px 10px rgba(0, 0, 0, .2));
+}
+
+#mascot:hover {
+    transform:
+        scale(1.1) rotate(4deg);
+}
+
+
+/* =========================================================
+                    POPUPS
+========================================================= */
+
+.popup {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(0, 30, 15, .75);
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 99999;
+
+    padding: 20px;
+}
+
+.popup-content {
+    position: relative;
+
+    background: white;
+
+    width: 90%;
+
+    max-width: 500px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    animation:
+        popupAppear .35s ease;
+}
+
+@keyframes popupAppear {
+
+    from {
+        transform:
+            scale(.75);
+
+        opacity: 0;
+    }
+
+    to {
+        transform:
+            scale(1);
+
+        opacity: 1;
+    }
+
+}
+
+.popup-content h2 {
+    font-size: 30px;
+
+    color: #2d6a4f;
+}
+
+.popup-content p {
+    line-height: 1.7;
+
+    color: #607d68;
+}
+
+.popup-content input,
+.popup-content textarea,
+.popup-content select {
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    border:
+        1px solid #cde5d3;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: .3s;
+}
+
+.popup-content input:focus,
+.popup-content textarea:focus,
+.popup-content select:focus {
+    border-color: #40916c;
+
+    box-shadow:
+        0 0 0 3px rgba(64, 145, 108, .12);
+}
+
+.popup-content textarea {
+    resize: vertical;
+}
+
+.close {
+    position: absolute;
+
+    right: 18px;
+
+    top: 12px;
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #edf8ef;
+
+    font-size: 23px;
+
+    cursor: pointer;
+
+    color: #355e47;
+
+    transition: .3s;
+}
+
+.close:hover {
+    background: #2d6a4f;
+
+    color: white;
+
+    transform:
+        rotate(90deg);
+}
+
+.donate-btn {
+    border: none;
+
+    background: #2d6a4f;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-weight: 700;
+
+    font-size: 16px;
+
+    transition: .3s;
+}
+
+.donate-btn:hover {
+    background: #1b4332;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(45, 106, 79, .25);
+}
+
+
+/* =========================================================
+                SCROLL TO TOP
+========================================================= */
+
+#topBtn {
+    position: fixed;
+
+    left: 25px;
+
+    bottom: 25px;
+
+    width: 58px;
+
+    height: 58px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #2d6a4f;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    display: none;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .25);
+
+    z-index: 999;
+
+    transition: .3s;
+}
+
+#topBtn:hover {
+    transform:
+        translateY(-5px);
+
+    background: #1b4332;
+}
+
+
+/* =========================================================
+                FADE-IN ANIMATIONS
+========================================================= */
+
+#environment-intro,
+#mission,
+#services,
+#awareness,
+#green-action,
+#how-we-help,
+#biodiversity,
+#education,
+#gallery,
+#impact,
+#tree-story,
+#small-actions,
+#eco-volunteer,
+#support,
+#faq,
+#why-planet,
+#final-cta {
+    opacity: 0;
+
+    transform:
+        translateY(45px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.show {
+    opacity: 1 !important;
+
+    transform:
+        translateY(0) !important;
+}
+
+
+/* =========================================================
+                    MOBILE
+========================================================= */
+
+@media(max-width: 768px) {
+
+    nav {
+        height: 75px;
+
+        padding:
+            0 20px;
+    }
+
+    .logo {
+        width: 65px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+
+        top: 0;
+
+        right: -100%;
+
+        width: 280px;
+
+        height: 100vh;
+
+        background: #f8fff9;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        justify-content: flex-start;
+
+        padding:
+            90px 30px;
+
+        gap: 22px;
+
+        transition: .4s;
+
+        box-shadow:
+            -8px 0 25px rgba(0, 0, 0, .15);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        color: #1b4332;
+
+        font-size: 16px;
+    }
+
+    .close-menu {
+        display: block;
+
+        position: absolute;
+
+        top: 20px;
+
+        right: 25px;
+
+        font-size: 25px;
+
+        cursor: pointer;
+
+        color: #2d6a4f;
+    }
+
+    header {
+        margin-top: 75px;
+
+        padding:
+            25px 15px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .hero {
+        height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .btn {
+        width: 90%;
+
+        max-width: 350px;
+    }
+
+    .section h2,
+    #environment-intro h2,
+    #gallery h2,
+    #eco-volunteer h2 {
+        font-size: 36px;
+    }
+
+    .large-text {
+        font-size: 18px;
+    }
+
+    .mission-cards,
+    .service-grid,
+    .awareness-grid,
+    .steps,
+    .biodiversity-grid,
+    .education-container,
+    .action-grid,
+    .why-grid,
+    .impact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .green-action-box {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding:
+            40px 25px;
+    }
+
+    .green-action-content h2 {
+        font-size: 35px;
+    }
+
+    .green-action-icon {
+        font-size: 90px;
+    }
+
+    .gallery-track img {
+        width: 250px;
+
+        height: 175px;
+    }
+
+    .tree-story-box {
+        padding:
+            35px 25px;
+    }
+
+    .tree-story-box p {
+        font-size: 18px;
+    }
+
+    .final-overlay h2 {
+        font-size: 39px;
+    }
+
+    .final-overlay p {
+        font-size: 18px;
+    }
+
+    .support-box h2 {
+        font-size: 38px;
+    }
+
+    .popup-content {
+        padding:
+            35px 25px;
+    }
+
+    #mascot {
+        width: 75px;
+
+        right: 15px;
+
+        bottom: 18px;
+    }
+
+    #topBtn {
+        width: 50px;
+
+        height: 50px;
+
+        left: 15px;
+
+        bottom: 18px;
+    }
+
+    footer h2 {
+        font-size: 28px;
+    }
+
+}
