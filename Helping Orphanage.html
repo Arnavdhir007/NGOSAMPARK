@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -10,281 +9,1350 @@
 
     <title>Helping Orphanages | Sampark</title>
 
-    <link rel="stylesheet" href="../CSS AND JS/Helping Orphanage.css">
+    <link rel="stylesheet" href="Helping Orphanage.css">
 
 </head>
 
 <body>
 
-    <nav>
 
-        <nav>
-            <a href="Home.html" class="home-btn">
-                🏠 Home
-            </a>
-            <a href="Education.html" class="logo-link">
-                🎓 Education
-            </a>
-            <a href="Healthcare.html" class="logo-link">
-                ❤️‍🩹 Healthcare
-            </a>
-            <a href="Helping-Orphanages.html" class="logo-link">
-                👧🏻 Helping Orphanages
-            </a>
-            <a href="Financial-Literacy.html" class="logo-link">
-                🏦 Financial Literacy
-            </a>
-            <a href="Environment.html" class="home-btn">
-                🌍 Environment
-            </a>
-            <a href="Home.html" class="home-btn">
-                📞 Contact Us
-            </a>
-        </nav>
+<!-- ==========================================
+                NAVIGATION
+========================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <img src="Sampark Logo.png" alt="Sampark Logo">
+
+    </div>
+
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+
+    <nav class="nav-links">
+
+        <a href="index.html">🏠 Home</a>
+
+        <a href="Education.html">🎓 Education</a>
+
+        <a href="Health Care.html">❤️ Healthcare</a>
+
+        <a href="Helping Orphanage.html">
+            👧 Helping Orphanages
+        </a>
+
+        <a href="Environment.html">
+            🌳 Environment
+        </a>
+
+        <a href="Financial Literacy.html">
+            🏦 Financial Literacy
+        </a>
+
+        <a href="Animal Welfare.html">
+            🐾 Animal Welfare
+        </a>
+
+        <a href="Contact Us.html">
+            📞 Contact Us
+        </a>
 
     </nav>
 
-    <section class="hero">
+</header>
 
-        <div class="hero-content">
 
-            <h1>
-                Every Child Deserves Love, Care and Hope
-            </h1>
 
-            <p>
-                Together we can provide shelter, education,
-                support and opportunities for children.
-            </p>
+<!-- ==========================================
+                HERO SECTION
+========================================== -->
 
-            <button onclick="openSupportPopup()">
-                Support A Child ❤️
-            </button>
+<section class="orphan-hero reveal">
 
-        </div>
+    <div class="hero-content">
 
-    </section>
+        <span class="hero-icon">
+            👧📚💛
+        </span>
 
-    <section class="about">
-
-        <h2>🏠 About Our Initiative</h2>
+        <h1>
+            Every Child Deserves A Brighter Tomorrow
+        </h1>
 
         <p>
 
-            Sampark works closely with orphanages and child-care
-            organizations to ensure children receive quality education,
-            nutritious meals, emotional support and opportunities
-            for a brighter future.
+            A safe childhood, a good education,
+            a warm meal and someone who believes
+            in them can change an entire life.
 
         </p>
 
-    </section>
 
-    <section class="services">
+        <div class="hero-buttons">
 
-        <div class="card">
+            <button
+                class="hero-btn"
+                onclick="scrollToSection('howHelp')">
 
-            <h3>🏠 Safe Shelter</h3>
+                💛 How Can I Help?
 
-            <p>
-                Providing safe and secure living environments.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>📚 Education</h3>
-
-            <p>
-                Access to schools, books and learning resources.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>🍲 Healthy Meals</h3>
-
-            <p>
-                Nutritious meals for healthy growth.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>❤️ Emotional Support</h3>
-
-            <p>
-                Care, guidance and emotional wellbeing.
-            </p>
-
-        </div>
-
-    </section>
-
-    <section class="gallery">
-    
-        <h2>📸 Our Journey</h2>
-    
-        <div class="gallery-container">
-    
-            <img src="orphan1.jpg">
-    
-            <img src="orphan2.jpg">
-    
-            <img src="orphan3.jpg">
-    
-            <img src="orphan4.jpg">
-    
-        </div>
-    
-    </section>
-
-    <section class="stories">
-    
-        <h2>🌟 Success Stories</h2>
-    
-        <div class="story-container">
-    
-            <div class="story-card">
-    
-                <h3>Sanjukta</h3>
-    
-                <p>
-                    With educational support from Sampark,
-                     is now one of the top students in her class
-                    and dreams of becoming Sanjukata a teacher.
-                </p>
-    
-            </div>
-    
-            <div class="story-card">
-    
-                <h3>Mohapatra</h3>
-    
-                <p>
-                    Mohapatra received mentorship and study resources.
-                    His dream is to become a doctor and help others.
-                </p>
-    
-            </div>
-    
-            <div class="story-card">
-    
-                <h3>Sujata</h3>
-    
-                <p>
-                    Sujata discovered her passion for science and
-                    now dreams of becoming an engineer.
-                </p>
-    
-            </div>
-    
-        </div>
-    
-    </section>
-
-    <section class="help-section">
-    
-        <h2>❤️ How You Can Help</h2>
-    
-        <div class="help-buttons">
-    
-            <button onclick="openSupportPopup()">
-                ❤️ Support A Child
             </button>
-    
-            <button onclick="openVolunteerPopup()">
-                🤝 Volunteer
+
+
+            <button
+                class="hero-btn secondary"
+                onclick="scrollToSection('donateBooks')">
+
+                📚 Donate Books
+
             </button>
-    
-        </div>
-    
-    </section>
 
-    <section class="impact">
-    
-        <div class="impact-box">
-    
-            <h1>600+</h1>
-    
-            <p>Children Supported</p>
-    
         </div>
-    
-        <div class="impact-box">
-    
-            <h1>75+</h1>
-    
-            <p>Volunteers</p>
-    
-        </div>
-    
-        <div class="impact-box">
-    
-            <h1>1500+</h1>
-    
-            <p>Books Distributed</p>
-    
-        </div>
-    
-        <div class="impact-box">
-    
-            <h1>100+</h1>
-    
-            <p>Events Conducted</p>
-    
-        </div>
-    
-    </section>
 
-    <div class="popup" id="volunteerPopup">
-    
-        <div class="popup-content">
-    
-            <span class="close" onclick="closeVolunteerPopup()">×</span>
-    
-            <h2>🤝 Become A Volunteer</h2>
-    
-            <input type="text" placeholder="Full Name">
-    
-            <input type="tel" placeholder="Phone Number">
-    
-            <input type="email" placeholder="Email Address">
-
-            <textarea placeholder="Why do you want to volunteer?"></textarea>
-
-            <button>Join Us</button>
-    
-        </div>
-    
     </div>
 
-    <div class="popup" id="supportPopup">
-    
-        <div class="popup-content">
-    
-            <span class="close" onclick="closeSupportPopup()">×</span>
-    
-            <h2>❤️ Support A Child</h2>
-    
-            <input type="text" placeholder="Full Name">
-    
-            <input type="tel" placeholder="Phone Number">
-    
-            <input type="email" placeholder="Email Address">
-    
-            <textarea placeholder="How would you like to help?"></textarea>
-    
-            <button>Submit</button>
-    
-        </div>
-    
+</section>
+
+
+
+<!-- ==========================================
+            INTRODUCTION
+========================================== -->
+
+<section class="orphan-intro reveal">
+
+    <div class="section-title">
+
+        <span>❤️</span>
+
+        <h2>
+            Every Child Deserves A Chance
+        </h2>
+
     </div>
 
-<script src="../CSS AND JS/Helping Orphanages.js"></script>
+
+    <p>
+
+        Childhood should be filled with learning,
+        laughter, friendship and dreams.
+
+        <br><br>
+
+        But many children grow up without the
+        support, resources and opportunities that
+        other children may have.
+
+        <br><br>
+
+        At Sampark, we believe that every child
+        deserves the opportunity to learn, grow,
+        dream and build a better future.
+
+        <br><br>
+
+        Sometimes, making a difference starts
+        with something as simple as an old book,
+        a school bag or a few hours of your time.
+
+    </p>
+
+</section>
+
+
+
+<!-- ==========================================
+            HOW YOU CAN HELP
+========================================== -->
+
+<section
+    class="how-help reveal"
+    id="howHelp">
+
+    <div class="section-title">
+
+        <span>🤝</span>
+
+        <h2>
+            How You Can Make A Difference
+        </h2>
+
+    </div>
+
+
+    <div class="help-grid">
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                📚
+            </div>
+
+            <h3>
+                Donate Old Books
+            </h3>
+
+            <p>
+
+                Have books sitting unused at home?
+
+                <br><br>
+
+                Give them a second life by donating
+                them to children who can learn from
+                them.
+
+            </p>
+
+            <button
+                onclick="openBookDonation()">
+
+                📖 Donate Books
+
+            </button>
+
+        </div>
+
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                🎒
+            </div>
+
+            <h3>
+                Donate School Supplies
+            </h3>
+
+            <p>
+
+                Notebooks, pencils, school bags,
+                geometry boxes and stationery can
+                help children enjoy their education.
+
+            </p>
+
+            <button
+                onclick="openSupplyDonation()">
+
+                ✏️ Donate Supplies
+
+            </button>
+
+        </div>
+
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                👕
+            </div>
+
+            <h3>
+                Donate Clothes
+            </h3>
+
+            <p>
+
+                Clean and usable clothes can provide
+                comfort and dignity to children who
+                need them.
+
+            </p>
+
+            <button
+                onclick="openClothesDonation()">
+
+                👕 Donate Clothes
+
+            </button>
+
+        </div>
+
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                🍱
+            </div>
+
+            <h3>
+                Support Food Programs
+            </h3>
+
+            <p>
+
+                Nutritious food is essential for
+                healthy growth, learning and
+                development.
+
+            </p>
+
+            <button
+                onclick="openFoodSupport()">
+
+                🍎 Support Food
+
+            </button>
+
+        </div>
+
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                💰
+            </div>
+
+            <h3>
+                Make A Donation
+            </h3>
+
+            <p>
+
+                Your financial support can help
+                provide education, food, healthcare
+                and essential resources.
+
+            </p>
+
+            <button
+                onclick="openPopup()">
+
+                💛 Donate Now
+
+            </button>
+
+        </div>
+
+
+
+        <div class="help-card">
+
+            <div class="help-icon">
+                🤝
+            </div>
+
+            <h3>
+                Volunteer
+            </h3>
+
+            <p>
+
+                Give your time, skills and energy
+                to support children and the people
+                working with them.
+
+            </p>
+
+            <button
+                onclick="openOrphanVolunteer()">
+
+                🙌 Volunteer
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            BOOK DONATION
+========================================== -->
+
+<section
+    class="donate-books reveal"
+    id="donateBooks">
+
+    <div class="books-content">
+
+        <div class="books-icon">
+            📚
+        </div>
+
+
+        <div>
+
+            <h2>
+                Don't Throw Away Your Old Books
+            </h2>
+
+            <p>
+
+                That storybook you finished years ago.
+
+                <br>
+
+                That textbook you no longer need.
+
+                <br>
+
+                That notebook with hundreds of
+                unused pages.
+
+                <br><br>
+
+                To you, it may be an old book.
+
+                <br>
+
+                To a child, it could be the beginning
+                of a new dream.
+
+            </p>
+
+
+            <button
+                class="primary-btn"
+                onclick="openBookDonation()">
+
+                📚 Donate Your Books
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            EDUCATION SECTION
+========================================== -->
+
+<section class="education-support reveal">
+
+    <div class="section-title">
+
+        <span>🎓</span>
+
+        <h2>
+            Education Can Change A Life
+        </h2>
+
+    </div>
+
+
+    <div class="education-content">
+
+
+        <div class="education-card">
+
+            <span>📖</span>
+
+            <h3>
+                Reading
+            </h3>
+
+            <p>
+                Books open doors to imagination,
+                knowledge and new possibilities.
+            </p>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <span>🧮</span>
+
+            <h3>
+                Learning
+            </h3>
+
+            <p>
+                Basic educational resources help
+                children build strong foundations.
+            </p>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <span>💻</span>
+
+            <h3>
+                Digital Skills
+            </h3>
+
+            <p>
+                Technology and digital literacy can
+                prepare children for future careers.
+            </p>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <span>🎨</span>
+
+            <h3>
+                Creativity
+            </h3>
+
+            <p>
+                Art, music and creative activities
+                allow children to express themselves.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            ESSENTIALS
+========================================== -->
+
+<section class="essentials reveal">
+
+    <div class="section-title">
+
+        <span>🎒</span>
+
+        <h2>
+            Small Things. Big Difference.
+        </h2>
+
+    </div>
+
+
+    <div class="essentials-grid">
+
+
+        <div class="essential-card">
+
+            <span>✏️</span>
+
+            <h3>
+                Stationery
+            </h3>
+
+            <p>
+                Pens, pencils, erasers, rulers
+                and notebooks.
+            </p>
+
+        </div>
+
+
+        <div class="essential-card">
+
+            <span>🎒</span>
+
+            <h3>
+                School Bags
+            </h3>
+
+            <p>
+                Good school bags make carrying
+                books easier and safer.
+            </p>
+
+        </div>
+
+
+        <div class="essential-card">
+
+            <span>👟</span>
+
+            <h3>
+                Footwear
+            </h3>
+
+            <p>
+                Clean, usable shoes can provide
+                comfort and confidence.
+            </p>
+
+        </div>
+
+
+        <div class="essential-card">
+
+            <span>👕</span>
+
+            <h3>
+                Clothes
+            </h3>
+
+            <p>
+                Good-quality clothing can provide
+                warmth and dignity.
+            </p>
+
+        </div>
+
+
+        <div class="essential-card">
+
+            <span>🧴</span>
+
+            <h3>
+                Hygiene Items
+            </h3>
+
+            <p>
+                Everyday hygiene products help
+                children stay healthy.
+            </p>
+
+        </div>
+
+
+        <div class="essential-card">
+
+            <span>🧸</span>
+
+            <h3>
+                Toys & Games
+            </h3>
+
+            <p>
+                Play is an important part of
+                childhood.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            FOOD & HEALTHCARE
+========================================== -->
+
+<section class="food-health reveal">
+
+    <div class="food-health-content">
+
+
+        <div class="food-box">
+
+            <span>🍎</span>
+
+            <h2>
+                Healthy Food
+            </h2>
+
+            <p>
+
+                Every child deserves nutritious meals
+                that support healthy growth and
+                learning.
+
+            </p>
+
+        </div>
+
+
+        <div class="health-box">
+
+            <span>❤️</span>
+
+            <h2>
+                Healthcare
+            </h2>
+
+            <p>
+
+                Regular healthcare and access to
+                medical support are important for
+                every child's wellbeing.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            EMOTIONAL MESSAGE
+========================================== -->
+
+<section class="emotional-orphan reveal">
+
+    <div class="emotional-box">
+
+        <span>
+            💛
+        </span>
+
+        <h2>
+            Sometimes A Child Doesn't Need
+            Much...
+        </h2>
+
+        <p>
+
+            Sometimes they just need someone
+            to say,
+
+            <br><br>
+
+            <strong>
+                "I believe in you."
+            </strong>
+
+            <br><br>
+
+            Someone to help with homework.
+
+            <br>
+
+            Someone to give them a book.
+
+            <br>
+
+            Someone to listen.
+
+            <br>
+
+            Someone to remind them that their
+            dreams matter.
+
+            <br><br>
+
+            Your kindness can become one of those
+            moments.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            VOLUNTEERING
+========================================== -->
+
+<section class="orphan-volunteer reveal">
+
+    <div class="volunteer-content">
+
+        <span>
+            🤝
+        </span>
+
+        <h2>
+            Give Your Time. Give Your Heart.
+        </h2>
+
+        <p>
+
+            You don't always need money to make
+            a difference.
+
+            <br><br>
+
+            You can teach, read stories, organize
+            books, help with activities, support
+            events or simply spend meaningful time
+            with children.
+
+        </p>
+
+
+        <button
+            onclick="openOrphanVolunteer()">
+
+            💛 Become A Volunteer
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            IMPACT
+========================================== -->
+
+<section class="orphan-impact reveal">
+
+    <div class="section-title">
+
+        <span>🌟</span>
+
+        <h2>
+            What Your Kindness Can Create
+        </h2>
+
+    </div>
+
+
+    <div class="impact-grid">
+
+
+        <div class="impact-card">
+
+            <h1>
+                📚
+            </h1>
+
+            <h3>
+                A Love For Learning
+            </h3>
+
+            <p>
+                One donated book can inspire
+                countless questions.
+            </p>
+
+        </div>
+
+
+        <div class="impact-card">
+
+            <h1>
+                🎓
+            </h1>
+
+            <h3>
+                Better Opportunities
+            </h3>
+
+            <p>
+                Education can open doors to
+                future possibilities.
+            </p>
+
+        </div>
+
+
+        <div class="impact-card">
+
+            <h1>
+                😊
+            </h1>
+
+            <h3>
+                Happy Childhoods
+            </h3>
+
+            <p>
+                Games, stories and friendships
+                create beautiful memories.
+            </p>
+
+        </div>
+
+
+        <div class="impact-card">
+
+            <h1>
+                🌱
+            </h1>
+
+            <h3>
+                Brighter Futures
+            </h3>
+
+            <p>
+                Supporting children today helps
+                build a stronger tomorrow.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            DONATION CTA
+========================================== -->
+
+<section class="orphan-donate reveal">
+
+    <div>
+
+        <span>
+            💛
+        </span>
+
+        <h2>
+            Your Small Contribution Can Become
+            A Big Hope
+        </h2>
+
+        <p>
+
+            Whether you donate a book, a school bag,
+            your time or money — every contribution
+            matters.
+
+        </p>
+
+
+        <button
+            onclick="openPopup()">
+
+            💰 Support A Child
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            FINAL MESSAGE
+========================================== -->
+
+<section class="orphan-final reveal">
+
+    <div>
+
+        <h1>
+            👧 Every Child Has A Dream.
+        </h1>
+
+        <p>
+
+            Let's give them the opportunity
+            to chase it.
+
+        </p>
+
+        <p>
+
+            A book.
+
+            A meal.
+
+            A lesson.
+
+            A smile.
+
+            A helping hand.
+
+            <br><br>
+
+            Sometimes the smallest acts of kindness
+            create the biggest changes.
+
+        </p>
+
+        <h2>
+            Sampark — Together For A Brighter Tomorrow 💛
+        </h2>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            BOOK DONATION POPUP
+========================================== -->
+
+<div
+    class="popup"
+    id="bookDonationPopup">
+
+    <div class="popup-content">
+
+        <span
+            class="close"
+            onclick="closeBookDonation()">
+
+            &times;
+
+        </span>
+
+
+        <h2>
+            📚 Donate Your Books
+        </h2>
+
+
+        <p>
+
+            Tell us what you'd like to donate
+            and we'll guide you through the process.
+
+        </p>
+
+
+        <input
+            type="text"
+            id="bookDonorName"
+            placeholder="Your Name">
+
+
+        <input
+            type="tel"
+            id="bookDonorPhone"
+            placeholder="Phone Number">
+
+
+        <input
+            type="text"
+            id="bookQuantity"
+            placeholder="Approx. number of books">
+
+
+        <textarea
+            id="bookDetails"
+            placeholder="What type of books are you donating?">
+        </textarea>
+
+
+        <button
+            onclick="submitBookDonation()">
+
+            📚 Submit Donation
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+            SUPPLIES POPUP
+========================================== -->
+
+<div
+    class="popup"
+    id="supplyDonationPopup">
+
+    <div class="popup-content">
+
+        <span
+            class="close"
+            onclick="closeSupplyDonation()">
+
+            &times;
+
+        </span>
+
+
+        <h2>
+            🎒 Donate School Supplies
+        </h2>
+
+
+        <p>
+            Tell us about the supplies you'd
+            like to donate.
+        </p>
+
+
+        <input
+            type="text"
+            id="supplyDonorName"
+            placeholder="Your Name">
+
+
+        <input
+            type="tel"
+            id="supplyDonorPhone"
+            placeholder="Phone Number">
+
+
+        <textarea
+            id="supplyDetails"
+            placeholder="What would you like to donate?">
+        </textarea>
+
+
+        <button
+            onclick="submitSupplyDonation()">
+
+            ✏️ Submit Donation
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+            CLOTHES POPUP
+========================================== -->
+
+<div
+    class="popup"
+    id="clothesDonationPopup">
+
+    <div class="popup-content">
+
+        <span
+            class="close"
+            onclick="closeClothesDonation()">
+
+            &times;
+
+        </span>
+
+
+        <h2>
+            👕 Donate Clothes
+        </h2>
+
+
+        <p>
+            Please provide a few details about
+            the clothes you would like to donate.
+        </p>
+
+
+        <input
+            type="text"
+            id="clothesDonorName"
+            placeholder="Your Name">
+
+
+        <input
+            type="tel"
+            id="clothesDonorPhone"
+            placeholder="Phone Number">
+
+
+        <textarea
+            id="clothesDetails"
+            placeholder="Type, size and approximate quantity">
+        </textarea>
+
+
+        <button
+            onclick="submitClothesDonation()">
+
+            👕 Submit Donation
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+            FOOD POPUP
+========================================== -->
+
+<div
+    class="popup"
+    id="foodSupportPopup">
+
+    <div class="popup-content">
+
+        <span
+            class="close"
+            onclick="closeFoodSupport()">
+
+            &times;
+
+        </span>
+
+
+        <h2>
+            🍎 Support Food Programs
+        </h2>
+
+
+        <p>
+            Let us know how you'd like to
+            support a food program.
+        </p>
+
+
+        <input
+            type="text"
+            id="foodDonorName"
+            placeholder="Your Name">
+
+
+        <input
+            type="tel"
+            id="foodDonorPhone"
+            placeholder="Phone Number">
+
+
+        <textarea
+            id="foodDetails"
+            placeholder="Tell us how you'd like to help">
+        </textarea>
+
+
+        <button
+            onclick="submitFoodSupport()">
+
+            🍎 Submit
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+            VOLUNTEER POPUP
+========================================== -->
+
+<div
+    class="popup"
+    id="orphanVolunteerPopup">
+
+    <div class="popup-content">
+
+        <span
+            class="close"
+            onclick="closeOrphanVolunteer()">
+
+            &times;
+
+        </span>
+
+
+        <h2>
+            🤝 Become A Volunteer
+        </h2>
+
+
+        <p>
+            We'd love to have you join us.
+        </p>
+
+
+        <input
+            type="text"
+            id="orphanVolunteerName"
+            placeholder="Your Name">
+
+
+        <input
+            type="tel"
+            id="orphanVolunteerPhone"
+            placeholder="Phone Number">
+
+
+        <select id="orphanVolunteerRole">
+
+            <option value="">
+                How would you like to help?
+            </option>
+
+            <option value="teaching">
+                📚 Teaching / Tutoring
+            </option>
+
+            <option value="books">
+                📖 Organizing Books
+            </option>
+
+            <option value="activities">
+                🎨 Children's Activities
+            </option>
+
+            <option value="events">
+                🎉 Events & Activities
+            </option>
+
+            <option value="general">
+                🤝 General Volunteering
+            </option>
+
+        </select>
+
+
+        <button
+            onclick="submitOrphanVolunteer()">
+
+            💛 Join Sampark
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+                FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <h2>
+        👧 Every Child Deserves A Chance 💛
+    </h2>
+
+    <p>
+        Sampark — Connecting hearts, creating hope.
+    </p>
+
+    <p>
+        Made with ❤️ for a brighter tomorrow.
+    </p>
+
+</footer>
+
+
+
+<!-- ==========================================
+            SCROLL TO TOP
+========================================== -->
+
+<button
+    id="topBtn"
+    class="top-btn">
+
+    ↑
+
+</button>
+
+
+
+<script src="Helping Orphanages.js"></script>
 
 </body>
 
