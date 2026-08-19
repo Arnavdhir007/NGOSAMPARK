@@ -1,1 +1,997 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animal Welfare | Sampark</title>
+
+    <link rel="stylesheet" href="Animal Welfare.css">
+
+</head>
+
+<body>
+
+
+<!-- ==========================================
+                NAVIGATION
+========================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <img src="Sampark Logo.png" alt="Sampark Logo">
+
+    </div>
+
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+
+    <nav class="nav-links">
+
+        <a href="index.html">🏠 Home</a>
+
+        <a href="Education.html">🎓 Education</a>
+
+        <a href="Health Care.html">❤️ Healthcare</a>
+
+        <a href="Helping Orphanage.html">
+            👧 Helping Orphanages
+        </a>
+
+        <a href="Environment.html">
+            🌳 Environment
+        </a>
+
+        <a href="Financial Literacy.html">
+            🏦 Financial Literacy
+        </a>
+
+        <a href="Animal Welfare.html">
+            🐮 Animal Welfare
+        </a>
+
+        <a href="Contact Us.html">
+            📞 Contact Us
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ==========================================
+                HERO SECTION
+========================================== -->
+
+<section class="animal-hero reveal">
+
+    <div class="hero-overlay">
+
+        <span class="hero-icon">
+            🐾
+        </span>
+
+        <h1>
+            Every Life Deserves Love
+        </h1>
+
+        <p>
+            Protecting animals, spreading kindness
+            and creating a world where every creature
+            can live with dignity and care.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button
+                class="animal-btn"
+                onclick="scrollToSection('helpAnimals')">
+
+                🐾 Help An Animal
+
+            </button>
+
+
+            <button
+                class="animal-btn secondary"
+                onclick="scrollToSection('animalActions')">
+
+                💚 Learn How To Help
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            INTRODUCTION
+========================================== -->
+
+<section class="animal-intro reveal">
+
+    <div class="section-title">
+
+        <span>🐾</span>
+
+        <h2>
+            Why Animal Welfare Matters
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        Animals are an important part of our world.
+        They share our communities, our environment
+        and our lives.
+
+        <br><br>
+
+        Many animals, however, face hunger, injuries,
+        abandonment, cruelty and unsafe living
+        conditions.
+
+        <br><br>
+
+        At Sampark, we believe that kindness should
+        not depend on whether someone can speak.
+        Every animal deserves compassion, protection
+        and a safe place to live.
+
+    </p>
+
+</section>
+
+
+
+<!-- ==========================================
+            ANIMAL CARE CARDS
+========================================== -->
+
+<section class="animal-care reveal">
+
+    <div class="section-title">
+
+        <span>❤️</span>
+
+        <h2>
+            How We Can Care For Animals
+        </h2>
+
+    </div>
+
+
+    <div class="animal-cards">
+
+
+        <div class="animal-card">
+
+            <div class="card-icon">
+                🍲
+            </div>
+
+            <h3>
+                Provide Food & Water
+            </h3>
+
+            <p>
+                Providing clean drinking water and
+                nutritious food can make a huge
+                difference to animals living on the
+                streets.
+            </p>
+
+        </div>
+
+
+
+        <div class="animal-card">
+
+            <div class="card-icon">
+                🏠
+            </div>
+
+            <h3>
+                Give Them Shelter
+            </h3>
+
+            <p>
+                Animals need protection from extreme
+                heat, rain, cold and unsafe surroundings.
+            </p>
+
+        </div>
+
+
+
+        <div class="animal-card">
+
+            <div class="card-icon">
+                🏥
+            </div>
+
+            <h3>
+                Support Medical Care
+            </h3>
+
+            <p>
+                Injured and sick animals need timely
+                treatment, medicine and professional
+                veterinary care.
+            </p>
+
+        </div>
+
+
+
+        <div class="animal-card">
+
+            <div class="card-icon">
+                🐕
+            </div>
+
+            <h3>
+                Encourage Adoption
+            </h3>
+
+            <p>
+                Adoption gives abandoned animals a
+                loving home and a second chance at life.
+            </p>
+
+        </div>
+
+
+
+        <div class="animal-card">
+
+            <div class="card-icon">
+                🤝
+            </div>
+
+            <h3>
+                Volunteer
+            </h3>
+
+            <p>
+                Volunteers can help feed animals,
+                organize rescue efforts and support
+                awareness campaigns.
+            </p>
+
+        </div>
+
+
+
+        <div class="animal-card">
+
+            <div class="card-icon">
+                🛡️
+            </div>
+
+            <h3>
+                Protect Them
+            </h3>
+
+            <p>
+                Speak up when you see animal cruelty
+                and help create safer communities
+                for animals.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            HELP AN ANIMAL
+========================================== -->
+
+<section
+    class="help-animals reveal"
+    id="helpAnimals">
+
+    <div class="help-content">
+
+        <div>
+
+            <span class="big-paw">
+                🐾
+            </span>
+
+            <h2>
+                Found An Animal In Need?
+            </h2>
+
+            <p>
+
+                If you find an injured, abandoned or
+                helpless animal, don't ignore them.
+
+                <br><br>
+
+                A small action from you could become
+                the reason an animal survives.
+
+            </p>
+
+        </div>
+
+
+        <button
+            class="help-btn"
+            onclick="openAnimalHelp()">
+
+            🚑 Report An Animal In Need
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            ANIMAL ACTIONS
+========================================== -->
+
+<section
+    class="animal-actions reveal"
+    id="animalActions">
+
+    <div class="section-title">
+
+        <span>🌱</span>
+
+        <h2>
+            Simple Things You Can Do
+        </h2>
+
+    </div>
+
+
+    <div class="action-grid">
+
+
+        <div class="action-card">
+
+            <span>💧</span>
+
+            <h3>
+                Keep Water Bowls
+            </h3>
+
+            <p>
+                Place clean water outside during
+                hot weather.
+            </p>
+
+        </div>
+
+
+        <div class="action-card">
+
+            <span>🍚</span>
+
+            <h3>
+                Feed Responsibly
+            </h3>
+
+            <p>
+                Give animals safe and suitable food
+                instead of harmful leftovers.
+            </p>
+
+        </div>
+
+
+        <div class="action-card">
+
+            <span>🩺</span>
+
+            <h3>
+                Help Injured Animals
+            </h3>
+
+            <p>
+                Contact a veterinarian or animal
+                rescue organization.
+            </p>
+
+        </div>
+
+
+        <div class="action-card">
+
+            <span>🏡</span>
+
+            <h3>
+                Adopt Don't Shop
+            </h3>
+
+            <p>
+                Consider giving a rescued animal
+                a permanent loving home.
+            </p>
+
+        </div>
+
+
+        <div class="action-card">
+
+            <span>📢</span>
+
+            <h3>
+                Spread Awareness
+            </h3>
+
+            <p>
+                Teach your friends and family
+                about responsible animal care.
+            </p>
+
+        </div>
+
+
+        <div class="action-card">
+
+            <span>❤️</span>
+
+            <h3>
+                Be Kind
+            </h3>
+
+            <p>
+                Treat every living creature with
+                patience, care and compassion.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            ADOPTION SECTION
+========================================== -->
+
+<section class="adoption reveal">
+
+    <div class="adoption-box">
+
+        <span>
+            🐶 🐱 🐰
+        </span>
+
+        <h2>
+            Give An Animal A Forever Home
+        </h2>
+
+        <p>
+
+            Adoption isn't just about giving an
+            animal a home.
+
+            <br>
+
+            It's about giving them family,
+            security and another chance to
+            experience love.
+
+        </p>
+
+
+        <button
+            class="adopt-btn"
+            onclick="openAdoptionPopup()">
+
+            🏠 I Want To Adopt
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            ANIMAL FACTS
+========================================== -->
+
+<section class="animal-facts reveal">
+
+    <div class="section-title">
+
+        <span>💡</span>
+
+        <h2>
+            Animal Kindness Facts
+        </h2>
+
+    </div>
+
+
+    <div class="fact-box">
+
+        <div id="animalFact">
+
+            🐾 Click the button to discover
+            an animal kindness fact!
+
+        </div>
+
+
+        <button
+            id="animalFactBtn"
+            onclick="showAnimalFact()">
+
+            ✨ Give Me A Fact
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            DONATION SECTION
+========================================== -->
+
+<section class="animal-donate reveal">
+
+    <div class="donate-content">
+
+        <span>
+            💚🐾💚
+        </span>
+
+        <h2>
+            Your Kindness Can Save A Life
+        </h2>
+
+        <p>
+
+            Your support can help provide food,
+            medical treatment, rescue support
+            and safe shelter for animals.
+
+        </p>
+
+
+        <button
+            class="donate-animal-btn"
+            onclick="openPopup()">
+
+            💛 Donate For Animal Welfare
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            VOLUNTEER SECTION
+========================================== -->
+
+<section class="animal-volunteer reveal">
+
+    <div>
+
+        <h2>
+            🐾 Become An Animal Welfare Volunteer
+        </h2>
+
+        <p>
+
+            Whether you can volunteer your time,
+            help with rescues, provide food or
+            simply spread awareness — every effort
+            matters.
+
+        </p>
+
+
+        <button
+            class="volunteer-btn"
+            onclick="openAnimalVolunteer()">
+
+            🤝 Become A Volunteer
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            IMPACT SECTION
+========================================== -->
+
+<section class="animal-impact reveal">
+
+    <div class="section-title">
+
+        <span>🌍</span>
+
+        <h2>
+            Together We Can Make A Difference
+        </h2>
+
+    </div>
+
+
+    <div class="impact-grid">
+
+
+        <div class="impact-card">
+
+            <h1>
+                🐾
+            </h1>
+
+            <p>
+                Every Life Matters
+            </p>
+
+        </div>
+
+
+        <div class="impact-card">
+
+            <h1>
+                ❤️
+            </h1>
+
+            <p>
+                Kindness Without Limits
+            </p>
+
+        </div>
+
+
+        <div class="impact-card">
+
+            <h1>
+                🤝
+            </h1>
+
+            <p>
+                Stronger Together
+            </p>
+
+        </div>
+
+
+        <div class="impact-card">
+
+            <h1>
+                🌱
+            </h1>
+
+            <p>
+                A Kinder Future
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            FINAL MESSAGE
+========================================== -->
+
+<section class="animal-final reveal">
+
+    <div>
+
+        <h1>
+            🐾 Be Their Voice. ❤️
+        </h1>
+
+        <p>
+
+            They may not speak our language,
+            but they understand kindness.
+
+        </p>
+
+        <p>
+
+            One bowl of water.
+            One meal.
+            One rescue.
+            One adoption.
+
+            <br><br>
+
+            One small act of kindness can change
+            an entire life.
+
+        </p>
+
+        <h2>
+            Sampark — Together For Every Life 🌍
+        </h2>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+            ANIMAL HELP POPUP
+========================================== -->
+
+<div
+    class="popup"
+    id="animalHelpPopup">
+
+    <div class="popup-content">
+
+        <span
+            class="close"
+            onclick="closeAnimalHelp()">
+
+            &times;
+
+        </span>
+
+        <h2>
+            🚑 Animal Help Request
+        </h2>
+
+        <p>
+            Tell us about the animal that needs help.
+        </p>
+
+
+        <input
+            type="text"
+            id="animalName"
+            placeholder="Your Name">
+
+
+        <input
+            type="tel"
+            id="animalPhone"
+            placeholder="Phone Number">
+
+
+        <input
+            type="text"
+            id="animalLocation"
+            placeholder="Animal Location">
+
+
+        <textarea
+            id="animalDescription"
+            placeholder="Describe the situation...">
+        </textarea>
+
+
+        <button
+            onclick="submitAnimalHelp()">
+
+            ❤️ Send Help Request
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+            ADOPTION POPUP
+========================================== -->
+
+<div
+    class="popup"
+    id="adoptionPopup">
+
+    <div class="popup-content">
+
+        <span
+            class="close"
+            onclick="closeAdoptionPopup()">
+
+            &times;
+
+        </span>
+
+        <h2>
+            🏠 Adoption Interest
+        </h2>
+
+        <p>
+            We'd love to hear from you!
+        </p>
+
+
+        <input
+            type="text"
+            id="adopterName"
+            placeholder="Your Name">
+
+
+        <input
+            type="tel"
+            id="adopterPhone"
+            placeholder="Phone Number">
+
+
+        <textarea
+            id="adoptionReason"
+            placeholder="Why would you like to adopt?">
+        </textarea>
+
+
+        <button
+            onclick="submitAdoption()">
+
+            🐾 Submit Interest
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+            VOLUNTEER POPUP
+========================================== -->
+
+<div
+    class="popup"
+    id="animalVolunteerPopup">
+
+    <div class="popup-content">
+
+        <span
+            class="close"
+            onclick="closeAnimalVolunteer()">
+
+            &times;
+
+        </span>
+
+        <h2>
+            🤝 Join Our Animal Welfare Team
+        </h2>
+
+        <p>
+            Every helping hand makes a difference.
+        </p>
+
+
+        <input
+            type="text"
+            id="animalVolunteerName"
+            placeholder="Your Name">
+
+
+        <input
+            type="tel"
+            id="animalVolunteerPhone"
+            placeholder="Phone Number">
+
+
+        <select id="animalVolunteerRole">
+
+            <option value="">
+                How would you like to help?
+            </option>
+
+            <option value="feeding">
+                🍲 Feeding Animals
+            </option>
+
+            <option value="rescue">
+                🚑 Rescue Support
+            </option>
+
+            <option value="adoption">
+                🏠 Adoption Support
+            </option>
+
+            <option value="awareness">
+                📢 Awareness
+            </option>
+
+        </select>
+
+
+        <button
+            onclick="submitAnimalVolunteer()">
+
+            💚 Join Sampark
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+                FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <h2>
+        🐾 Every Life Matters ❤️
+    </h2>
+
+    <p>
+        Sampark — Creating a kinder world
+        for people, animals and nature.
+    </p>
+
+    <p>
+        Made with ❤️ for a better tomorrow.
+    </p>
+
+</footer>
+
+
+
+<!-- ==========================================
+            SCROLL TO TOP
+========================================== -->
+
+<button
+    id="topBtn"
+    class="top-btn">
+
+    ↑
+
+</button>
+
+
+
+<script src="Animal Welfare.js"></script>
+
+</body>
+
+</html> 
