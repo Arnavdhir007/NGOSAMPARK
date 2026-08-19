@@ -1,0 +1,1389 @@
+/* ==========================================
+        ANIMAL WELFARE - SAMPARK
+        COMPLETE CSS
+========================================== */
+
+
+/* ==========================================
+        GLOBAL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4fff5;
+    color: #26352a;
+    overflow-x: hidden;
+}
+
+
+/* ==========================================
+        NAVBAR
+========================================== */
+
+.navbar {
+    width: 100%;
+    min-height: 90px;
+
+    background: #c5a72d;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 4%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.logo img {
+    width: 95px;
+    height: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #172b19;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+
+    background: #ffffff;
+
+    color: #244d2a;
+
+    font-size: 25px;
+
+    padding: 8px 12px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================
+        HERO
+========================================== */
+
+.animal-hero {
+    min-height: 88vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 100px 30px;
+
+    position: relative;
+
+    background:
+        linear-gradient(rgba(12, 75, 30, 0.70),
+            rgba(4, 45, 20, 0.78)),
+        url("https://images.unsplash.com/photo-1450778869180-41d0601e046e") center / cover;
+
+    overflow: hidden;
+}
+
+.animal-hero::before {
+    content: "🐾";
+    position: absolute;
+
+    font-size: 230px;
+
+    opacity: 0.08;
+
+    top: 5%;
+    left: 5%;
+
+    transform: rotate(-20deg);
+}
+
+.animal-hero::after {
+    content: "🐾";
+
+    position: absolute;
+
+    font-size: 280px;
+
+    opacity: 0.07;
+
+    bottom: -5%;
+    right: 5%;
+
+    transform: rotate(25deg);
+}
+
+.hero-overlay {
+    max-width: 950px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.hero-icon {
+    font-size: 75px;
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    animation: pawFloat 3s ease-in-out infinite;
+}
+
+@keyframes pawFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero-overlay h1 {
+    font-size: 72px;
+
+    line-height: 1.1;
+
+    margin-bottom: 30px;
+
+    text-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero-overlay p {
+    font-size: 25px;
+
+    line-height: 1.7;
+
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.animal-btn {
+    border: none;
+
+    background: #ffffff;
+
+    color: #185c2b;
+
+    padding: 17px 32px;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.animal-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.animal-btn.secondary {
+    background: #9be15d;
+
+    color: #173c20;
+}
+
+
+/* ==========================================
+        SECTION TITLE
+========================================== */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.section-title span {
+    display: block;
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 48px;
+
+    color: #175c2a;
+}
+
+
+/* ==========================================
+        INTRO
+========================================== */
+
+.animal-intro {
+    padding: 110px 10%;
+
+    text-align: center;
+
+    background: #ffffff;
+}
+
+.animal-intro p {
+    max-width: 950px;
+
+    margin: auto;
+
+    font-size: 21px;
+
+    line-height: 1.9;
+
+    color: #4b5b4e;
+}
+
+
+/* ==========================================
+        CARE SECTION
+========================================== */
+
+.animal-care {
+    padding: 110px 5%;
+
+    background:
+        linear-gradient(135deg,
+            #eaffea,
+            #f8fff8);
+}
+
+.animal-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+.animal-card {
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(30, 90, 40, 0.12);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.animal-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 15px 35px rgba(30, 110, 45, 0.25);
+}
+
+.card-icon {
+    font-size: 55px;
+
+    margin-bottom: 20px;
+}
+
+.animal-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+    color: #17632d;
+}
+
+.animal-card p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #5a685d;
+}
+
+
+/* ==========================================
+        HELP ANIMAL
+========================================== */
+
+.help-animals {
+    padding: 90px 8%;
+
+    background:
+        linear-gradient(135deg,
+            #247a3b,
+            #0d4d22);
+
+    color: white;
+}
+
+.help-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.big-paw {
+    font-size: 80px;
+}
+
+.help-content h2 {
+    font-size: 45px;
+
+    margin: 15px 0;
+}
+
+.help-content p {
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    max-width: 700px;
+}
+
+.help-btn {
+    flex-shrink: 0;
+
+    border: none;
+
+    background: #ffffff;
+
+    color: #17632d;
+
+    padding: 18px 30px;
+
+    border-radius: 40px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.help-btn:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ==========================================
+        ACTIONS
+========================================== */
+
+.animal-actions {
+    padding: 110px 5%;
+
+    background: #f5fff6;
+}
+
+.action-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.action-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    border: 2px solid #d8f0dc;
+
+    transition: 0.3s ease;
+}
+
+.action-card:hover {
+    transform: translateY(-8px);
+
+    background: #edffef;
+
+    border-color: #72c57e;
+}
+
+.action-card span {
+    display: block;
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+.action-card h3 {
+    font-size: 23px;
+
+    color: #17632d;
+
+    margin-bottom: 12px;
+}
+
+.action-card p {
+    color: #5a685d;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+        ADOPTION
+========================================== */
+
+.adoption {
+    padding: 120px 20px;
+
+    background:
+        linear-gradient(135deg,
+            #fff8df,
+            #fff2bb);
+
+    text-align: center;
+}
+
+.adoption-box {
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.adoption-box>span {
+    font-size: 60px;
+
+    display: block;
+
+    margin-bottom: 20px;
+}
+
+.adoption-box h2 {
+    font-size: 50px;
+
+    color: #315d35;
+
+    margin-bottom: 25px;
+}
+
+.adoption-box p {
+    font-size: 21px;
+
+    line-height: 1.8;
+
+    color: #5f665d;
+
+    margin-bottom: 35px;
+}
+
+.adopt-btn {
+    border: none;
+
+    background: #3c914c;
+
+    color: white;
+
+    padding: 17px 35px;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.adopt-btn:hover {
+    transform: scale(1.08);
+
+    background: #276d34;
+
+    box-shadow:
+        0 10px 25px rgba(30, 100, 40, 0.25);
+}
+
+
+/* ==========================================
+        FACTS
+========================================== */
+
+.animal-facts {
+    padding: 110px 20px;
+
+    background: white;
+
+    text-align: center;
+}
+
+.fact-box {
+    max-width: 800px;
+
+    margin: auto;
+
+    background:
+        linear-gradient(135deg,
+            #dff8e2,
+            #f5fff6);
+
+    padding: 55px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+#animalFact {
+    min-height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+    line-height: 1.6;
+
+    color: #285c33;
+
+    margin-bottom: 30px;
+}
+
+#animalFactBtn {
+    border: none;
+
+    background: #3c914c;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#animalFactBtn:hover {
+    transform: scale(1.06);
+}
+
+
+/* ==========================================
+        DONATION
+========================================== */
+
+.animal-donate {
+    padding: 110px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(135deg,
+            #17632d,
+            #0a3d19);
+
+    color: white;
+}
+
+.donate-content {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.donate-content>span {
+    display: block;
+
+    font-size: 60px;
+
+    margin-bottom: 20px;
+}
+
+.donate-content h2 {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+.donate-content p {
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+.donate-animal-btn {
+    border: none;
+
+    background: #ffd84d;
+
+    color: #253d27;
+
+    padding: 18px 35px;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.donate-animal-btn:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+        0 10px 30px rgba(255, 216, 77, 0.3);
+}
+
+
+/* ==========================================
+        VOLUNTEER
+========================================== */
+
+.animal-volunteer {
+    padding: 100px 20px;
+
+    background: #e5f8e8;
+
+    text-align: center;
+}
+
+.animal-volunteer>div {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.animal-volunteer h2 {
+    font-size: 45px;
+
+    color: #17632d;
+
+    margin-bottom: 20px;
+}
+
+.animal-volunteer p {
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+    color: #536157;
+}
+
+.volunteer-btn {
+    border: none;
+
+    background: #247a3b;
+
+    color: white;
+
+    padding: 17px 32px;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.volunteer-btn:hover {
+    transform: scale(1.07);
+
+    background: #145b27;
+}
+
+
+/* ==========================================
+        IMPACT
+========================================== */
+
+.animal-impact {
+    padding: 110px 5%;
+
+    background: #ffffff;
+}
+
+.impact-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.impact-card {
+    background: #f0fff2;
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+.impact-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(30, 100, 40, 0.15);
+}
+
+.impact-card h1 {
+    font-size: 60px;
+
+    margin-bottom: 15px;
+}
+
+.impact-card p {
+    font-size: 19px;
+
+    font-weight: bold;
+
+    color: #2c6035;
+}
+
+
+/* ==========================================
+        FINAL
+========================================== */
+
+.animal-final {
+    padding: 130px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(rgba(6, 53, 20, 0.88),
+            rgba(3, 34, 13, 0.94)),
+        url("https://images.unsplash.com/photo-1546182990-dffeafbe841d") center / cover;
+}
+
+.animal-final h1 {
+    font-size: 65px;
+
+    margin-bottom: 30px;
+
+    color: #b9f58c;
+}
+
+.animal-final p {
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    font-size: 23px;
+
+    line-height: 1.8;
+}
+
+.animal-final h2 {
+    margin-top: 45px;
+
+    font-size: 30px;
+
+    color: #ffffff;
+}
+
+
+/* ==========================================
+        POPUPS
+========================================== */
+
+.popup {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        rgba(0, 0, 0, 0.75);
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    z-index: 99999;
+}
+
+.popup-content {
+    position: relative;
+
+    width: 90%;
+
+    max-width: 500px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.4);
+
+    animation: popupIn 0.35s ease;
+}
+
+@keyframes popupIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.85) translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+}
+
+.popup-content h2 {
+    font-size: 30px;
+
+    color: #17632d;
+
+    margin-bottom: 15px;
+}
+
+.popup-content p {
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+    margin-bottom: 20px;
+}
+
+.close {
+    position: absolute;
+
+    top: 12px;
+
+    right: 15px;
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #eeeeee;
+
+    color: #333;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.close:hover {
+    background: #ff4d6d;
+
+    color: white;
+
+    transform: scale(1.1);
+}
+
+
+/* ==========================================
+        FORM ELEMENTS
+========================================== */
+
+.popup-content input,
+.popup-content textarea,
+.popup-content select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    margin: 8px 0;
+
+    border: 2px solid #d8e8da;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    background: #fbfffb;
+}
+
+.popup-content textarea {
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+.popup-content input:focus,
+.popup-content textarea:focus,
+.popup-content select:focus {
+    border-color: #55a961;
+
+    box-shadow:
+        0 0 8px rgba(70, 150, 80, 0.15);
+}
+
+.popup-content button {
+    border: none;
+
+    background: #3c914c;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    transition: 0.3s;
+}
+
+.popup-content button:hover {
+    transform: scale(1.05);
+
+    background: #246d32;
+}
+
+
+/* ==========================================
+        SCROLL REVEAL
+========================================== */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(60px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* ==========================================
+        TOP BUTTON
+========================================== */
+
+.top-btn {
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #247a3b;
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: none;
+
+    z-index: 5000;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.2);
+
+    transition: 0.3s;
+}
+
+.top-btn:hover {
+    transform: translateY(-5px);
+
+    background: #145b27;
+}
+
+
+/* ==========================================
+        FOOTER
+========================================== */
+
+.footer {
+    background: #102716;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 75px 20px;
+}
+
+.footer h2 {
+    color: #b9f58c;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #d5e4d7;
+}
+
+
+/* ==========================================
+        MOBILE
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .animal-cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .action-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .impact-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .logo img {
+        width: 75px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: #c5a72d;
+
+        flex-direction: column;
+
+        padding: 25px;
+
+        gap: 20px;
+
+        box-shadow:
+            0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-overlay h1 {
+        font-size: 48px;
+    }
+
+    .hero-overlay p {
+        font-size: 19px;
+    }
+
+    .hero-icon {
+        font-size: 55px;
+    }
+
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+    .animal-cards,
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .help-content {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .help-content h2 {
+        font-size: 35px;
+    }
+
+    .adoption-box h2 {
+        font-size: 38px;
+    }
+
+    .donate-content h2 {
+        font-size: 38px;
+    }
+
+    .animal-volunteer h2 {
+        font-size: 35px;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .animal-final h1 {
+        font-size: 45px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .animal-hero {
+        min-height: 80vh;
+
+        padding: 80px 20px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 40px;
+    }
+
+    .hero-overlay p {
+        font-size: 17px;
+    }
+
+    .animal-btn {
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 31px;
+    }
+
+    .animal-intro,
+    .animal-care,
+    .animal-actions,
+    .animal-facts {
+        padding: 80px 20px;
+    }
+
+    .fact-box {
+        padding: 30px 20px;
+    }
+
+    #animalFact {
+        font-size: 18px;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .popup-content {
+        padding: 30px 20px;
+    }
+
+    .animal-final {
+        padding: 100px 20px;
+    }
+
+    .animal-final h1 {
+        font-size: 38px;
+    }
+
+    .animal-final p {
+        font-size: 18px;
+    }
+
+}
